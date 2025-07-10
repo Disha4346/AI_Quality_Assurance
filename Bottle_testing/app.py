@@ -54,7 +54,7 @@ def predict():
         threshold = 0.0040  # Manual threshold override for higher sensitivity
         is_defective = mse > threshold
 
-        df = pd.read_csv("D:/Intel_Unnati_Project 2025/Bottle_testing/product_traceability_bottle_log.csv")
+        df = pd.read_csv("product_traceability_bottle_log.csv")
         match = df[df['Image_Hash'] == img_hash]
 
         defect_label = "Unknown"
